@@ -5,7 +5,7 @@
 	--rare-light-grey: #F5F5F5;
 	--page-width: 1440px;
 	--page-gutter: 24px;
-	--section-space: 72px;
+	--section-space: 40px;
 	--copy-width: 720px;
 	--statement-width: 900px;
 	--rule: 1px solid var(--rare-light-grey);
@@ -135,15 +135,15 @@ h3 {
 	padding-left: var(--page-gutter);
 }
 
-.hero,
 .section {
-	padding-top: var(--section-space);
-	padding-bottom: var(--section-space);
+	padding-top: calc(var(--section-space) / 2);
+	padding-bottom: calc(var(--section-space) / 2);
 }
 
 .hero {
 	min-height: auto;
 	padding-top: 72px;
+	padding-bottom: calc(var(--section-space) / 2);
 	display: flex;
 	align-items: center;
 }
@@ -174,10 +174,6 @@ h3 {
 	color: var(--rare-blue);
 	font-size: clamp(1.1rem, 1.6vw, 1.4rem);
 	line-height: 1.45;
-}
-
-.section {
-	border-top: var(--rule);
 }
 
 .section__inner {
@@ -212,11 +208,14 @@ h3 {
 	flex-direction: column;
 	gap: 16px;
 	padding-top: 20px;
-	border-top: var(--rule);
 }
 
 .dimension p {
 	max-width: none;
+}
+
+.section--contact {
+	padding-top: calc(var(--section-space) * 2.75);
 }
 
 .section--contact .section__copy {
@@ -249,10 +248,16 @@ h3 {
 	text-align: center;
 }
 
+.site-footer__inner p {
+	display: inline-block;
+	max-width: 100%;
+	text-align: center;
+}
+
 @media (min-width: 768px) {
 	:root {
 		--page-gutter: 8vw;
-		--section-space: 120px;
+		--section-space: 72px;
 	}
 
 	.site-header {
@@ -297,7 +302,7 @@ h3 {
 	@media (min-width: 981px) {
 	:root {
 		--page-gutter: 8vw;
-		--section-space: 120px;
+		--section-space: 72px;
 	}
 
 	.hero {
