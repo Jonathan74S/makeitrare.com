@@ -240,7 +240,6 @@ h3 {
 .site-footer {
 	padding-top: 28px;
 	padding-bottom: 36px;
-	border-top: var(--rule);
 }
 
 .site-footer__inner {
