@@ -197,6 +197,13 @@ h3 {
 	gap: 14px;
 }
 
+.section__copy,
+.dimension p {
+	font-family: "EB Garamond", Georgia, serif;
+	font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+	line-height: 1.55;
+}
+
 .dimensions {
 	display: grid;
 	grid-template-columns: 1fr;
