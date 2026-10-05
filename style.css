@@ -172,9 +172,10 @@ h3 {
 
 .hero__principle {
 	max-width: var(--copy-width);
+	font-family: "EB Garamond", Georgia, serif;
 	color: var(--rare-text);
-	font-size: clamp(1.05rem, 1.25vw, 1.25rem);
-	line-height: 1.6;
+	font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+	line-height: 1.55;
 }
 
 .section__inner {
